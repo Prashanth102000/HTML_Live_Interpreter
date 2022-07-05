@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Interpreter</title>
+</head>
+
+<script type="text/javascript">
+    function LiveInterpreter() {
+        var x = document.getElementById("inputs");
+        var z = document.getElementById("play");
+        z.innerHTML = x.value;
+    }
+</script>
+
+<body bgcolor="lightblue">
+    <header>
+        <h1>
+            <center>HTML Live Interpreter</center>
+        </h1>
+        <!-- <marquee direction="right" height="30"> <a href="http://www.thetechnetwork.net">www.thetechnetwork.net</a></marquee> -->
+    </header>
+
+    <center>
+        <textarea id="inputs" rows="20" cols="90" onkeyup=LiveInterpreter()></textarea>
+    </center>
+
+    <br/>
+    <br>
+    <section>
+        <div id="play" style="text-align:center; font-size:18px; font-family:'Times New Roman', Times, serif; "></div>
+
+    </section>
+
+
+</body>
+
+</html>
